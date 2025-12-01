@@ -7,7 +7,7 @@
 	(title_block
 		(title "ChargeBridge Eval Board")
 		(date "2025-07-15")
-		(rev "1.1")
+		(rev "1.2")
 		(company "Pionix GmbH")
 		(comment 1 "Cornelius Claussen / Jonas Rockstroh")
 		(comment 2 "License: CERN-OHL-P")
@@ -3593,7 +3593,7 @@
 			)
 		)
 		(instances
-			(project "som-devkit"
+			(project "cb-eval-board"
 				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/1755c0a2-585a-492e-b021-254c7a3a5ae3"
 					(page "21")
 				)
@@ -3655,7 +3655,7 @@
 			)
 		)
 		(instances
-			(project "som-devkit"
+			(project "cb-eval-board"
 				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/1755c0a2-585a-492e-b021-254c7a3a5ae3"
 					(page "20")
 				)
@@ -3717,7 +3717,7 @@
 			)
 		)
 		(instances
-			(project "som-devkit"
+			(project "cb-eval-board"
 				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/1755c0a2-585a-492e-b021-254c7a3a5ae3"
 					(page "22")
 				)
@@ -3778,7 +3778,7 @@
 			)
 		)
 		(instances
-			(project "som-devkit"
+			(project "cb-eval-board"
 				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/1755c0a2-585a-492e-b021-254c7a3a5ae3"
 					(page "15")
 				)
@@ -3840,7 +3840,7 @@
 			)
 		)
 		(instances
-			(project "som-devkit"
+			(project "cb-eval-board"
 				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/1755c0a2-585a-492e-b021-254c7a3a5ae3"
 					(page "18")
 				)
@@ -3901,7 +3901,7 @@
 			)
 		)
 		(instances
-			(project "som-devkit"
+			(project "cb-eval-board"
 				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/1755c0a2-585a-492e-b021-254c7a3a5ae3"
 					(page "17")
 				)
@@ -3962,7 +3962,7 @@
 			)
 		)
 		(instances
-			(project "som-devkit"
+			(project "cb-eval-board"
 				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/1755c0a2-585a-492e-b021-254c7a3a5ae3"
 					(page "29")
 				)
@@ -4023,7 +4023,7 @@
 			)
 		)
 		(instances
-			(project "som-devkit"
+			(project "cb-eval-board"
 				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/1755c0a2-585a-492e-b021-254c7a3a5ae3"
 					(page "14")
 				)
@@ -4085,7 +4085,7 @@
 			)
 		)
 		(instances
-			(project "som-devkit"
+			(project "cb-eval-board"
 				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/1755c0a2-585a-492e-b021-254c7a3a5ae3"
 					(page "19")
 				)
@@ -4146,7 +4146,7 @@
 			)
 		)
 		(instances
-			(project "som-devkit"
+			(project "cb-eval-board"
 				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/1755c0a2-585a-492e-b021-254c7a3a5ae3"
 					(page "16")
 				)

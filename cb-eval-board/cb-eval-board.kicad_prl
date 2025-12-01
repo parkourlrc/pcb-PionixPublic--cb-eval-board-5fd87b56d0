@@ -1,6 +1,6 @@
 {
   "board": {
-    "active_layer": 2,
+    "active_layer": 5,
     "active_layer_preset": "",
     "auto_track_width": false,
     "hidden_netclasses": [],
@@ -31,7 +31,6 @@
     "visible_items": [
       "vias",
       "footprint_text",
-      "footprint_anchors",
       "ratsnest",
       "grid",
       "footprints_front",
@@ -48,7 +47,7 @@
       "conflict_shadows",
       "shapes"
     ],
-    "visible_layers": "00000000_00000000_0ffeff74_57555575",
+    "visible_layers": "00000000_00000000_0ffeff7c_5555fff5",
     "zone_display_mode": 0
   },
   "git": {
@@ -58,7 +57,7 @@
     "ssh_key": ""
   },
   "meta": {
-    "filename": "som-devkit.kicad_prl",
+    "filename": "cb-eval-board.kicad_prl",
     "version": 5
   },
   "net_inspector_panel": {

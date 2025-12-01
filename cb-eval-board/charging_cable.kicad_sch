@@ -7,7 +7,7 @@
 	(title_block
 		(title "ChargeBridge Eval Board")
 		(date "2025-07-15")
-		(rev "1.1")
+		(rev "1.2")
 		(company "Pionix GmbH")
 		(comment 1 "Cornelius Claussen / Jonas Rockstroh")
 		(comment 2 "License: CERN-OHL-P")
@@ -2034,107 +2034,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:GND"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -6.35 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "GND"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "GND_0_1"
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 -1.27) (xy 1.27 -1.27) (xy 0 -2.54) (xy -1.27 -1.27) (xy 0 -1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "GND_1_1"
-				(pin power_in line
-					(at 0 0 270)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 	)
 	(text "Charging Cable Connector"
 		(exclude_from_sim no)
@@ -2239,7 +2138,7 @@
 		)
 		(uuid "e11e6a85-dc73-4b2e-a031-05bb0a22ec2b")
 	)
-	(hierarchical_label "PT1000_2"
+	(hierarchical_label "PT1000_2+"
 		(shape input)
 		(at 173.99 86.36 180)
 		(effects
@@ -2250,7 +2149,18 @@
 		)
 		(uuid "250b28e7-68ed-467a-9e3f-d6f1a2ba0d25")
 	)
-	(hierarchical_label "PT1000_1"
+	(hierarchical_label "PT1000_1+"
+		(shape input)
+		(at 173.99 81.28 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "3da45266-461a-4c86-b6bc-9edb0151ce65")
+	)
+	(hierarchical_label "PT1000_1-"
 		(shape input)
 		(at 173.99 83.82 180)
 		(effects
@@ -2259,7 +2169,18 @@
 			)
 			(justify right)
 		)
-		(uuid "3da45266-461a-4c86-b6bc-9edb0151ce65")
+		(uuid "bd703d84-58d7-4bcc-a0ac-ce62d46518de")
+	)
+	(hierarchical_label "PT1000_2-"
+		(shape input)
+		(at 173.99 88.9 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "ee58eb47-3087-4830-88fc-640532cbc6aa")
 	)
 	(symbol
 		(lib_id "power:+24V")
@@ -2449,140 +2370,6 @@
 			(project "som-devkit"
 				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/3c71b7d3-2d0b-4b57-a542-fa18dae63c72"
 					(reference "J11")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 173.99 81.28 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "27924681-9e62-4735-82b9-b7a3265279ac")
-		(property "Reference" "#PWR065"
-			(at 167.64 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 170.18 81.2799 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 173.99 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 173.99 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 173.99 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0e7a9a0b-f964-4c51-97ea-37a7e27f1bcb")
-		)
-		(instances
-			(project "som-devkit"
-				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/3c71b7d3-2d0b-4b57-a542-fa18dae63c72"
-					(reference "#PWR065")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 173.99 88.9 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "bbf59d1a-463c-442e-b9e2-01be80a8d8b2")
-		(property "Reference" "#PWR066"
-			(at 167.64 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 170.18 88.8999 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 173.99 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 173.99 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 173.99 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "6370ef12-b560-444b-a11e-28df8f057200")
-		)
-		(instances
-			(project ""
-				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/3c71b7d3-2d0b-4b57-a542-fa18dae63c72"
-					(reference "#PWR066")
 					(unit 1)
 				)
 			)

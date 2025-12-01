@@ -3,7 +3,7 @@
 This repository contains the KiCad project files for the **ChargeBridge Evaluation Board**, released as open hardware.
 
 > [!NOTE]  
-> KiCad version **9.0.2 or newer** is required to open this project. [Download KiCad](https://www.kicad.org/)
+> KiCad version **9.0.3 or newer** is required to open this project. [Download KiCad](https://www.kicad.org/)
 
 ![CB Eval Board 3D View](https://github.com/PionixPublic/cb-eval-board/blob/main/cb-eval.png?raw=true)
 
@@ -29,10 +29,6 @@ This evaluation board is designed to facilitate testing and development with **P
 The board can be DIN rail mounted using a suitable adapter, enabling integration into control cabinets or industrial test setups.
 
 For more details refer to the PDF datasheet.
-
-> [!WARNING]  
-> This is a pre-release version and has not yet been fully tested. The official release is planned for October 2025.
-
 
 ## Features
 

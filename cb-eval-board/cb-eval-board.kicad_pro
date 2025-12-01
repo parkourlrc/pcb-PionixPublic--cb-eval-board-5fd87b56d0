@@ -501,7 +501,7 @@
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.125,
         "via_diameter": 0.6,
-        "via_drill": 0.2,
+        "via_drill": 0.25,
         "wire_width": 6
       },
       {
@@ -518,7 +518,7 @@
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.15,
         "via_diameter": 0.6,
-        "via_drill": 0.2,
+        "via_drill": 0.25,
         "wire_width": 6
       },
       {
@@ -535,7 +535,7 @@
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.2,
         "via_diameter": 0.6,
-        "via_drill": 0.2,
+        "via_drill": 0.25,
         "wire_width": 6
       }
     ],
@@ -564,8 +564,8 @@
       "gencad": "",
       "idf": "",
       "netlist": "",
-      "plot": "production/1.0/devkit-v1.0-picknplace/",
-      "pos_files": "production/1.0/devkit-v1.0-picknplace/",
+      "plot": "production/1.2/CB-EVAL-1.2-picknplace/",
+      "pos_files": "production/1.2/CB-EVAL-1.2-picknplace/",
       "specctra_dsn": "",
       "step": "production/1.0/som-devkit.step",
       "svg": "",

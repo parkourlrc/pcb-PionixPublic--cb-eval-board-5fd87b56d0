@@ -7,7 +7,7 @@
 	(title_block
 		(title "ChargeBridge Eval Board")
 		(date "2025-07-15")
-		(rev "1.1")
+		(rev "1.2")
 		(company "Pionix GmbH")
 		(comment 1 "Cornelius Claussen / Jonas Rockstroh")
 		(comment 2 "License: CERN-OHL-P")
@@ -3709,9 +3709,9 @@
 		(at 226.06 83.82 0)
 		(unit 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(fields_autoplaced yes)
 		(uuid "0838470e-ebc1-4221-9591-a692b9f400a1")
 		(property "Reference" "U8"
@@ -5022,9 +5022,9 @@
 		(at 250.19 130.81 0)
 		(unit 2)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
-		(dnp no)
+		(dnp yes)
 		(uuid "3430703d-a40d-4968-b223-55561af76a0f")
 		(property "Reference" "U8"
 			(at 250.19 115.57 0)

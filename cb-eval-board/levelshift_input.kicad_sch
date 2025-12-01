@@ -7,7 +7,7 @@
 	(title_block
 		(title "ChargeBridge Eval Board")
 		(date "2025-07-15")
-		(rev "1.1")
+		(rev "1.2")
 		(company "Pionix GmbH")
 		(comment 1 "Cornelius Claussen / Jonas Rockstroh")
 		(comment 2 "License: CERN-OHL-P")
@@ -898,26 +898,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "3.3V Zener"
-		(exclude_from_sim no)
-		(at 114.3 101.854 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "2e17422b-44f8-4e74-8b8c-492fd4af5172")
-	)
-	(text "0.77mA @ 36V input"
-		(exclude_from_sim no)
-		(at 119.888 87.376 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "31bfd520-134d-45d1-92c5-cb1b6f6d7ee8")
-	)
 	(text "30V tolerant input"
 		(exclude_from_sim no)
 		(at 145.542 65.532 0)
@@ -942,9 +922,15 @@
 		(color 0 0 0 0)
 		(uuid "ca356d1a-aa1e-4007-95ad-a9eb45a06bf7")
 	)
+	(junction
+		(at 138.43 92.71)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "cbf2a9b5-7b11-48bd-a3de-96d318250bcd")
+	)
 	(wire
 		(pts
-			(xy 130.81 92.71) (xy 142.24 92.71)
+			(xy 130.81 92.71) (xy 138.43 92.71)
 		)
 		(stroke
 			(width 0)
@@ -1031,6 +1017,26 @@
 			(type default)
 		)
 		(uuid "db7a7e66-7589-4cab-a133-a9006deef69b")
+	)
+	(wire
+		(pts
+			(xy 138.43 93.98) (xy 138.43 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "de2ed1b1-8613-4421-82e0-e45d0f0b99a2")
+	)
+	(wire
+		(pts
+			(xy 138.43 92.71) (xy 142.24 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ef2e12a5-8e6b-430a-a5dc-68d02949e18d")
 	)
 	(hierarchical_label "IN"
 		(shape input)
@@ -1166,24 +1172,23 @@
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(fields_autoplaced yes)
 		(uuid "1ebbcfe1-e4ff-4c82-9d43-efd66c690b9e")
 		(property "Reference" "D20"
-			(at 128.27 96.5199 90)
+			(at 131.572 95.25 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
-		(property "Value" "MM3Z3V3ST1G"
-			(at 128.27 99.0599 90)
+		(property "Value" "MM3Z5V1ST1G"
+			(at 127.508 107.696 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Diode_SMD:D_SOD-323"
@@ -1447,7 +1452,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "MM3Z3V3ST1GOSCT-ND"
+		(property "Digikey" "MM3Z5V1ST1GOSCT-ND"
 			(at 130.81 97.79 0)
 			(effects
 				(font
@@ -1456,7 +1461,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "MM3Z3V3ST1G"
+		(property "MPN" "MM3Z5V1ST1G"
 			(at 130.81 97.79 0)
 			(effects
 				(font
@@ -2049,6 +2054,398 @@
 				)
 				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/8f60c67e-fce3-44c0-a9ae-8af4feb31816/2ddfd227-3b02-4b71-b500-da0b906403de"
 					(reference "#PWR0115")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "cb-eval-lib:R")
+		(at 138.43 97.79 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "711ce7cb-f667-4036-b250-e6478a48459f")
+		(property "Reference" "R73"
+			(at 140.97 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1M"
+			(at 138.43 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 140.208 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 138.43 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 138.43 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Application" ""
+			(at 138.43 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Case/Size Code" ""
+			(at 138.43 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Category" ""
+			(at 138.43 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ComponentLink1Description" ""
+			(at 138.43 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ComponentLink1URL" ""
+			(at 138.43 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ComponentLink2Description" ""
+			(at 138.43 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "ComponentLink2URL" ""
+			(at 138.43 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Data Rate" ""
+			(at 138.43 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Feld5" ""
+			(at 138.43 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field4" ""
+			(at 138.43 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field5" ""
+			(at 138.43 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field6" ""
+			(at 138.43 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Field7" ""
+			(at 138.43 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Height" ""
+			(at 138.43 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Inductance" ""
+			(at 138.43 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Insulation Test Voltage" ""
+			(at 138.43 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Length" ""
+			(at 138.43 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer Part Number" ""
+			(at 138.43 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Match Code" ""
+			(at 138.43 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mount" ""
+			(at 138.43 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Mouser" ""
+			(at 138.43 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Operating Temperature Max" ""
+			(at 138.43 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Operating Temperature Min" ""
+			(at 138.43 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Packaging" ""
+			(at 138.43 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Turns Ratio" ""
+			(at 138.43 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Width" ""
+			(at 138.43 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Digikey" "RMCF0603FT1M00CT-ND"
+			(at 138.43 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MPN" "RMCF0603FT1M00"
+			(at 138.43 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "Stackpole Electronics Inc"
+			(at 138.43 97.79 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MANUFACTURER" ""
+			(at 138.43 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "MAXIMUM_PACKAGE_HEIGHT" ""
+			(at 138.43 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Sim.Device" ""
+			(at 138.43 97.79 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "d134efd2-644d-45c0-b842-cbcee38de526")
+		)
+		(pin "1"
+			(uuid "6a58876f-68b0-4ae9-80e9-0048b76a38e6")
+		)
+		(instances
+			(project "cb-eval-board"
+				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/069a3097-1dd4-4d1f-9971-5da5cc1a3659/5bcec1ba-097c-4a52-a7ab-3a95c118f993"
+					(reference "R102")
+					(unit 1)
+				)
+				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/069a3097-1dd4-4d1f-9971-5da5cc1a3659/870fd846-fe4a-4366-9ed2-c78ab89721ed"
+					(reference "R98")
+					(unit 1)
+				)
+				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/069a3097-1dd4-4d1f-9971-5da5cc1a3659/ffd15309-018b-4561-9533-234b11da8e57"
+					(reference "R97")
+					(unit 1)
+				)
+				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/1755c0a2-585a-492e-b021-254c7a3a5ae3/27a6d267-1657-400f-ae18-64adafd43927"
+					(reference "R94")
+					(unit 1)
+				)
+				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/1755c0a2-585a-492e-b021-254c7a3a5ae3/9b08c97d-4129-42eb-820a-cc16294fb992"
+					(reference "R96")
+					(unit 1)
+				)
+				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/1755c0a2-585a-492e-b021-254c7a3a5ae3/a253ede1-10d0-4dd7-a4fb-f0fa44195b6d"
+					(reference "R103")
+					(unit 1)
+				)
+				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/1755c0a2-585a-492e-b021-254c7a3a5ae3/b8de5a6a-c429-494c-b7a0-d22f60372cd1"
+					(reference "R78")
+					(unit 1)
+				)
+				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/1755c0a2-585a-492e-b021-254c7a3a5ae3/cf6561d2-9c13-4a8e-8e99-2c738c8965af"
+					(reference "R95")
+					(unit 1)
+				)
+				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/8f60c67e-fce3-44c0-a9ae-8af4feb31816/18582281-7319-4ba6-9949-663941348726"
+					(reference "R73")
+					(unit 1)
+				)
+				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/8f60c67e-fce3-44c0-a9ae-8af4feb31816/2ddfd227-3b02-4b71-b500-da0b906403de"
+					(reference "R76")
 					(unit 1)
 				)
 			)
@@ -2820,6 +3217,109 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 138.43 101.6 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cddb8d63-9104-4904-9eae-5bb4e9b17c36")
+		(property "Reference" "#PWR065"
+			(at 138.43 107.95 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 138.43 106.68 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 138.43 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 138.43 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 138.43 101.6 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "1b9b13c3-c07e-4617-8ff7-05683f9504f8")
+		)
+		(instances
+			(project "cb-eval-board"
+				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/069a3097-1dd4-4d1f-9971-5da5cc1a3659/5bcec1ba-097c-4a52-a7ab-3a95c118f993"
+					(reference "#PWR0193")
+					(unit 1)
+				)
+				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/069a3097-1dd4-4d1f-9971-5da5cc1a3659/870fd846-fe4a-4366-9ed2-c78ab89721ed"
+					(reference "#PWR0184")
+					(unit 1)
+				)
+				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/069a3097-1dd4-4d1f-9971-5da5cc1a3659/ffd15309-018b-4561-9533-234b11da8e57"
+					(reference "#PWR0175")
+					(unit 1)
+				)
+				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/1755c0a2-585a-492e-b021-254c7a3a5ae3/27a6d267-1657-400f-ae18-64adafd43927"
+					(reference "#PWR0140")
+					(unit 1)
+				)
+				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/1755c0a2-585a-492e-b021-254c7a3a5ae3/9b08c97d-4129-42eb-820a-cc16294fb992"
+					(reference "#PWR0163")
+					(unit 1)
+				)
+				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/1755c0a2-585a-492e-b021-254c7a3a5ae3/a253ede1-10d0-4dd7-a4fb-f0fa44195b6d"
+					(reference "#PWR0202")
+					(unit 1)
+				)
+				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/1755c0a2-585a-492e-b021-254c7a3a5ae3/b8de5a6a-c429-494c-b7a0-d22f60372cd1"
+					(reference "#PWR0125")
+					(unit 1)
+				)
+				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/1755c0a2-585a-492e-b021-254c7a3a5ae3/cf6561d2-9c13-4a8e-8e99-2c738c8965af"
+					(reference "#PWR0162")
+					(unit 1)
+				)
+				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/8f60c67e-fce3-44c0-a9ae-8af4feb31816/18582281-7319-4ba6-9949-663941348726"
+					(reference "#PWR065")
+					(unit 1)
+				)
+				(path "/ee76d9b5-33bd-43ee-bc90-efda5c6c69fd/8f60c67e-fce3-44c0-a9ae-8af4feb31816/2ddfd227-3b02-4b71-b500-da0b906403de"
+					(reference "#PWR066")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "cb-eval-lib:R")
 		(at 120.65 92.71 270)
 		(mirror x)
@@ -2837,7 +3337,7 @@
 				)
 			)
 		)
-		(property "Value" "47k"
+		(property "Value" "20k"
 			(at 120.65 92.71 90)
 			(effects
 				(font
@@ -3106,7 +3606,7 @@
 				(hide yes)
 			)
 		)
-		(property "Digikey" "RMCF0603FT47K0CT-ND"
+		(property "Digikey" "RMCF0603FT20K0CT-ND"
 			(at 120.65 92.71 0)
 			(effects
 				(font
@@ -3115,7 +3615,7 @@
 				(hide yes)
 			)
 		)
-		(property "MPN" "RMCF0603FT47K0"
+		(property "MPN" "RMCF0603FT20K0"
 			(at 120.65 92.71 0)
 			(effects
 				(font
